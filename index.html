@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KhrystellineA — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mrs+Saint+Delafield&family=Shadows+Into+Light&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ─── CURSOR ─── -->
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- ─── LOADER ─── -->
+<div id="loader">
+  <!-- Pixel art running cats (SVGs injected by script below) -->
+  <div class="ld-cat-runner ld-cat-runner-1"><div class="ld-cat-bobber" id="pcat-black"></div></div>
+  <div class="ld-cat-runner ld-cat-runner-2"><div class="ld-cat-bobber" id="pcat-white"></div></div>
+  <div class="ld-cat-runner ld-cat-runner-3"><div class="ld-cat-bobber" id="pcat-spotted"></div></div>
+  <!-- Text -->
+  <div class="ld-name">
+    <span style="animation-delay:.00s">K</span><span style="animation-delay:.05s">H</span><span style="animation-delay:.10s">R</span><span style="animation-delay:.15s">Y</span><span style="animation-delay:.20s">S</span><span style="animation-delay:.25s">T</span><span style="animation-delay:.30s">E</span><span style="animation-delay:.35s">L</span><span style="animation-delay:.40s">L</span><span style="animation-delay:.45s">I</span><span style="animation-delay:.50s">N</span><span style="animation-delay:.55s">E</span><span style="animation-delay:.60s">'</span><span style="animation-delay:.65s">S</span>&nbsp;<span style="animation-delay:.70s">C</span><span style="animation-delay:.75s">O</span><span style="animation-delay:.80s">R</span><span style="animation-delay:.85s">N</span><span style="animation-delay:.90s">E</span><span style="animation-delay:.95s">R</span>
+  </div>
+  <div class="ld-bar-wrap"><div class="ld-bar"></div></div>
+  <p class="ld-sub">crafting your experience...</p>
+</div>
+
+<!-- ─── NAV ─── -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">Khrystelline<em>A</em></a>
+  <ul class="nav-center">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#design">Design</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme"></button>
+    <a href="mailto:KhrystellineA@gmail.com" class="nav-hire">Hire Me ✦</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════
+     HERO
+════════════════════════════════════ -->
+<section id="hero">
+  <!-- Floating decorations -->
+  <div class="deco float" style="top:12%;left:3%;animation-delay:0s;">
+    <div class="g-heart"></div>
+  </div>
+  <div class="deco float" style="top:30%;left:14%;animation-delay:1.2s;">
+    <span class="sp" style="font-size:1.4rem;">✦</span>
+  </div>
+  <div class="deco float" style="top:70%;left:8%;animation-delay:.6s;">
+    <svg class="butterfly" width="48" height="36" viewBox="0 0 48 36" style="animation:bfly 5s ease-in-out infinite;">
+      <path d="M24,18 Q12,2 2,6 Q0,18 12,20 Q18,22 24,18Z" fill="rgba(255,95,160,.5)"/>
+      <path d="M24,18 Q36,2 46,6 Q48,18 36,20 Q30,22 24,18Z" fill="rgba(255,95,160,.4)"/>
+      <path d="M24,18 Q14,26 6,30 Q10,36 18,28 Q21,24 24,18Z" fill="rgba(255,150,190,.4)"/>
+      <path d="M24,18 Q34,26 42,30 Q38,36 30,28 Q27,24 24,18Z" fill="rgba(255,150,190,.35)"/>
+    </svg>
+  </div>
+  <div class="deco float" style="top:20%;right:44%;animation-delay:2s;">
+    <span class="sp" style="font-size:.9rem;color:var(--pink-soft);">✸</span>
+  </div>
+
+  <div class="hero-bg-name">CORNER</div>
+  <div class="blob" style="width:500px;height:500px;top:-100px;left:-150px;"></div>
+
+  <!-- LEFT -->
+  <div class="hero-left">
+    <p class="hero-eyebrow reveal">Portfolio 2025 · Open to opportunities</p>
+    <h1 class="hero-name reveal d1">
+      KHRYSTELLINE'S<br><span class="pk">CORNER</span>
+    </h1>
+    <p class="hero-intro reveal d2">I'm Khrystelline — an IT student in my final year at the University of the Cordilleras, Philippines, passionate about building digital experiences that are both functional and beautifully designed.</p>
+    <span class="hero-alias reveal d2">— KhrystellineA</span>
+    <div class="hero-roles reveal d3">
+      <span class="role-pill">Full Stack Dev</span>
+      <span class="role-pill">UI/UX Designer</span>
+      <span class="role-pill">AI Engineer</span>
+      <span class="role-pill">Web3</span>
+      <span class="role-pill">Frontend Dev</span>
+    </div>
+    <div class="hero-ctas reveal d4">
+      <a href="#projects" class="btn btn-pink"><span>View My Work</span></a>
+      <a href="#" class="btn btn-ghost">Download CV</a>
+    </div>
+  </div>
+
+  <!-- RIGHT: editorial photo -->
+  <div class="hero-right reveal d2">
+    <div class="hero-photo-wrap">
+      <div class="photo-sticker">That's me! ✦</div>
+      <div class="hero-photo-frame">
+        <!-- Replace src with your actual photos -->
+        <img class="ph-dark"  src="YOUR_DARK_MODE_PHOTO.jpg" alt="Khrystel">
+        <img class="ph-light" src="YOUR_LIGHT_MODE_PHOTO.jpg" alt="Khrystel">
+        <!-- Placeholder shown until photos are added -->
+        <div class="photo-placeholder">
+          <span style="font-size:3rem;opacity:.15;">📷</span>
+          <span class="ph-label" id="ph-mode-label">Dark mode photo</span>
+        </div>
+      </div>
+      <div class="hero-oval"></div>
+      <div class="hero-sig">Khrystel ✦</div>
+      <!-- Glass heart accent -->
+      <div class="deco float" style="bottom:-1rem;right:-2rem;animation-delay:.3s;">
+        <div class="g-heart sm"></div>
+      </div>
+    </div>
+  </div>
+
+<!-- scroll indicator removed -->
+</section>
+
+<!-- ─── MARQUEE ─── -->
+<div class="marquee-outer">
+  <div class="marquee-track">
+    <span class="mq-item">Full Stack Development</span>
+    <span class="mq-item">UI/UX Design</span>
+    <span class="mq-item">AI Engineering</span>
+    <span class="mq-item">Web3 Development</span>
+    <span class="mq-item">React + Supabase</span>
+    <span class="mq-item">Quasar + Firebase</span>
+    <span class="mq-item">Available for Hire</span>
+    <span class="mq-item">Open to Relocation</span>
+    <span class="mq-item">Philippines 🇵🇭</span>
+    <span class="mq-item">Full Stack Development</span>
+    <span class="mq-item">UI/UX Design</span>
+    <span class="mq-item">AI Engineering</span>
+    <span class="mq-item">Web3 Development</span>
+    <span class="mq-item">React + Supabase</span>
+    <span class="mq-item">Quasar + Firebase</span>
+    <span class="mq-item">Available for Hire</span>
+    <span class="mq-item">Open to Relocation</span>
+    <span class="mq-item">Philippines 🇵🇭</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     ABOUT
+════════════════════════════════════ -->
+<section id="about">
+  <div class="blob" style="width:400px;height:400px;top:20%;right:-80px;"></div>
+  <!-- Floating -->
+  <div class="deco float" style="top:5%;right:5%;animation-delay:.5s;">
+    <div class="g-heart lg"></div>
+  </div>
+  <div class="deco float" style="bottom:10%;left:2%;animation-delay:1.5s;">
+    <span class="sp" style="font-size:1.6rem;">✦</span>
+  </div>
+
+  <!-- Butterfly decorations -->
+  <div class="deco" style="top:15%;left:5%;animation:bfly 6s ease-in-out infinite;animation-delay:.3s;">
+    <svg class="butterfly" width="40" height="30" viewBox="0 0 48 36">
+      <path d="M24,18 Q12,2 2,6 Q0,18 12,20 Q18,22 24,18Z" fill="rgba(255,95,160,.45)"/>
+      <path d="M24,18 Q36,2 46,6 Q48,18 36,20 Q30,22 24,18Z" fill="rgba(255,95,160,.35)"/>
+      <path d="M24,18 Q14,26 6,30 Q10,36 18,28 Q21,24 24,18Z" fill="rgba(255,150,190,.35)"/>
+      <path d="M24,18 Q34,26 42,30 Q38,36 30,28 Q27,24 24,18Z" fill="rgba(255,150,190,.3)"/>
+    </svg>
+  </div>
+  <div class="deco" style="bottom:20%;right:8%;animation:bfly 7s ease-in-out infinite;animation-delay:1.2s;">
+    <svg class="butterfly" width="32" height="24" viewBox="0 0 48 36">
+      <path d="M24,18 Q12,2 2,6 Q0,18 12,20 Q18,22 24,18Z" fill="rgba(255,95,160,.4)"/>
+      <path d="M24,18 Q36,2 46,6 Q48,18 36,20 Q30,22 24,18Z" fill="rgba(255,95,160,.3)"/>
+      <path d="M24,18 Q14,26 6,30 Q10,36 18,28 Q21,24 24,18Z" fill="rgba(200,130,170,.3)"/>
+      <path d="M24,18 Q34,26 42,30 Q38,36 30,28 Q27,24 24,18Z" fill="rgba(200,130,170,.25)"/>
+    </svg>
+  </div>
+
+  <div class="about-grid">
+    <!-- Photo col -->
+    <div class="about-photo-col reveal">
+      <div class="polaroid-main">
+        <div class="p-photo">
+          <img src="YOUR_ABOUT_PHOTO.jpg" alt="Khrystel">
+          <span style="opacity:.2;font-size:2rem;">📷</span>
+          <span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(200,150,175,.6);">Add your photo</span>
+        </div>
+        <p class="p-cap">Khrystel ✦ 23y/o INFP Gemini</p>
+      </div>
+      <div class="collage-sticker">it's me ✨</div>
+    </div>
+
+    <!-- Text col -->
+    <div class="about-text">
+      <h2 class="about-heading reveal">Hi there!</h2>
+      <p class="about-body reveal d1">
+        When I'm not coding, I'm sketching UI concepts, chasing good food, or at the gym. I'm someone who loves turning messy ideas into clean, thoughtful products — and I genuinely enjoy the process just as much as the outcome. I'm actively looking for roles where I can keep growing, ship real work, and be part of a team that cares about what they build.
+      </p>
+      <div class="word-row reveal d2">
+        <div class="word-card metallic-hover">
+          <span class="w">Active</span><span class="ws">Always moving</span>
+        </div>
+        <div class="word-card metallic-hover">
+          <span class="w">Creative</span><span class="ws">Thinks in design</span>
+        </div>
+        <div class="word-card metallic-hover">
+          <span class="w">Driven</span><span class="ws">Delulu but focused</span>
+        </div>
+      </div>
+      <div class="fact-row reveal d3">
+        <span class="fact-pill">🌶️ Raw chili eater</span>
+        <span class="fact-pill">🖋️ 10 tattoos</span>
+        <span class="fact-pill">💪 Gym life</span>
+        <span class="fact-pill">✈️ Traveler</span>
+        <span class="fact-pill">💃 Dancer</span>
+        <span class="fact-pill">🎨 Artist</span>
+        <span class="fact-pill">🇵🇭 Philippines</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     SKILLS
+════════════════════════════════════ -->
+<section id="skills" class="alt paper-bg">
+  <div class="skills-header">
+    <h2 class="skills-hl reveal">
+      MY<br><span class="pk">SKILLS</span>
+    </h2>
+    <p class="reveal d1" style="max-width:260px;font-size:.85rem;color:var(--text-muted);line-height:1.8;text-align:right;">
+      Tools, technologies &amp; abilities — grouped by category.
+    </p>
+  </div>
+  <div class="skill-grid">
+    <div class="skill-cat metallic-hover reveal d1">
+      <div class="skill-cat-name">Frontend</div>
+      <div class="skill-chips">
+        <span class="chip">React</span><span class="chip">Vue.js</span><span class="chip">Quasar</span><span class="chip">Next.js</span><span class="chip">Angular</span><span class="chip">Svelte</span><span class="chip">TailwindCSS</span><span class="chip">Bootstrap</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Vite</span>
+      </div>
+    </div>
+    <div class="skill-cat metallic-hover reveal d2">
+      <div class="skill-cat-name">Backend</div>
+      <div class="skill-chips">
+        <span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">FastAPI</span><span class="chip">Laravel</span><span class="chip">PHP</span><span class="chip">Python</span><span class="chip">.NET / C#</span><span class="chip">Supabase</span><span class="chip">Firebase</span><span class="chip">REST APIs</span>
+      </div>
+    </div>
+    <div class="skill-cat metallic-hover reveal d3">
+      <div class="skill-cat-name">Database & Cloud</div>
+      <div class="skill-chips">
+        <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">SQLite</span><span class="chip">AWS</span><span class="chip">Google Cloud</span><span class="chip">Azure</span><span class="chip">Vercel</span><span class="chip">Netlify</span><span class="chip">Render</span>
+      </div>
+    </div>
+    <div class="skill-cat metallic-hover reveal d1">
+      <div class="skill-cat-name">AI & Data</div>
+      <div class="skill-chips">
+        <span class="chip">AI Prompt Engineering</span><span class="chip">TensorFlow</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">scikit-learn</span><span class="chip">Power BI</span><span class="chip">Python</span>
+      </div>
+    </div>
+    <div class="skill-cat metallic-hover reveal d2">
+      <div class="skill-cat-name">Web3</div>
+      <div class="skill-chips">
+        <span class="chip">Solidity</span><span class="chip">Web3.js</span><span class="chip">Ethers.js</span><span class="chip">Smart Contracts</span><span class="chip">MetaMask</span>
+      </div>
+    </div>
+    <div class="skill-cat metallic-hover reveal d3">
+      <div class="skill-cat-name">Design & Creative</div>
+      <div class="skill-chips">
+        <span class="chip">Figma</span><span class="chip">Canva</span><span class="chip">Adobe Photoshop</span><span class="chip">Adobe Illustrator</span><span class="chip">Premiere Pro</span><span class="chip">After Effects</span><span class="chip">InDesign</span><span class="chip">Framer</span>
+      </div>
+    </div>
+    <div class="skill-cat metallic-hover reveal d1">
+      <div class="skill-cat-name">Soft Skills</div>
+      <div class="skill-chips">
+        <span class="chip">Communication</span><span class="chip">Teamwork</span><span class="chip">Problem Solving</span><span class="chip">Critical Thinking</span><span class="chip">Adaptability</span><span class="chip">Time Management</span><span class="chip">Creativity</span><span class="chip">Leadership</span><span class="chip">Attention to Detail</span>
+      </div>
+    </div>
+    <div class="skill-cat metallic-hover reveal d2">
+      <div class="skill-cat-name">Software & Tools</div>
+      <div class="skill-chips">
+        <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">GitLab</span><span class="chip">Docker</span><span class="chip">VS Code</span><span class="chip">Postman</span><span class="chip">Jira</span><span class="chip">Notion</span><span class="chip">Trello</span><span class="chip">Linear</span><span class="chip">Slack</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     PROJECTS
+════════════════════════════════════ -->
+<section id="projects">
+  <div class="blob" style="width:500px;height:500px;top:10%;right:-100px;"></div>
+  <div class="proj-header">
+    <h2 class="proj-hl reveal">
+      MY<br><span class="pk-outline">PROJECTS</span>
+    </h2>
+  </div>
+
+  <!-- Filter tabs -->
+  <div class="filter-tabs reveal">
+    <button class="ftab active" data-filter="all">All</button>
+    <button class="ftab" data-filter="fullstack">Full Stack</button>
+    <button class="ftab" data-filter="aiml">AI / ML</button>
+    <button class="ftab" data-filter="web3">Web3</button>
+    <button class="ftab" data-filter="uiux">UI/UX</button>
+  </div>
+
+  <div class="proj-grid">
+    <!-- Boost Baguio -->
+    <div class="proj-card reveal" data-cat="fullstack">
+      <div class="proj-visual">
+        <div class="proj-status">Ongoing · Capstone</div>
+        <div class="pv-icon">🌲</div>
+        <p class="pv-label">Add screenshots</p>
+        <div class="pv-glow"></div>
+      </div>
+      <div class="proj-info">
+        <div class="proj-num">01</div>
+        <div>
+          <h3 class="proj-name">BOOST BAGUIO</h3>
+          <p class="proj-sub">Teaching Navigation. Authentic Baguio. 🚌</p>
+          <p class="proj-desc">A jeepney navigation & tourism platform that teaches tourists how to commute like a local in Baguio City. Instead of tracking, it teaches — telling you what to say to the driver and exactly how to get there. Built in two stacks simultaneously.</p>
+          <div class="proj-tags">
+            <span class="ptag">React</span><span class="ptag">Supabase</span><span class="ptag">Quasar</span><span class="ptag">Firebase</span><span class="ptag">Leaflet.js</span><span class="ptag">TailwindCSS</span><span class="ptag">PostgreSQL</span><span class="ptag">PostGIS</span>
+          </div>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="pl prim">Live Demo ↗</a>
+          <a href="https://github.com/KhrystellineA" class="pl out">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Prompt Engineering -->
+    <div class="proj-card reveal" data-cat="aiml">
+      <div class="proj-visual">
+        <div class="proj-status">Workshop</div>
+        <div class="pv-icon">🤖</div>
+        <p class="pv-label">AI Project</p>
+        <div class="pv-glow"></div>
+      </div>
+      <div class="proj-info">
+        <div class="proj-num">02</div>
+        <div>
+          <h3 class="proj-name">AI PROMPT ENGINEERING</h3>
+          <p class="proj-sub">Structured prompt frameworks for AI outputs</p>
+          <p class="proj-desc">Workshop-based deep dive into AI prompt engineering — building structured templates and validation mechanisms to optimize model outputs across different use cases.</p>
+          <div class="proj-tags">
+            <span class="ptag">Prompt Engineering</span><span class="ptag">AI/ML</span><span class="ptag">Python</span>
+          </div>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/KhrystellineA" class="pl out">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coming soon -->
+    <div class="proj-soon reveal">
+      <p>More projects on the way...</p>
+      <span>Currently building · Stay tuned ✦</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     DESIGN WORK
+════════════════════════════════════ -->
+<section id="design" class="alt">
+  <div class="design-header">
+    <h2 class="design-hl reveal">
+      DESIGN<br><span class="pk">WORK</span>
+    </h2>
+    <p class="design-sub reveal d1">UI/UX, branding &amp; creative work. Where code meets aesthetics.</p>
+  </div>
+  <div class="design-grid reveal">
+    <div class="di metallic-hover">
+      <span class="di-placeholder">🎨</span>
+      <span class="di-label">Featured design</span>
+      <div class="di-overlay">
+        <span>↗ View on Behance</span>
+      </div>
+    </div>
+    <div class="di metallic-hover">
+      <span class="di-placeholder">✦</span>
+      <span class="di-label">UI Design</span>
+      <div class="di-overlay"><span>↗ View on Dribbble</span></div>
+    </div>
+    <div class="di metallic-hover">
+      <span class="di-placeholder">🌸</span>
+      <span class="di-label">Branding</span>
+      <div class="di-overlay"><span>↗ View on Behance</span></div>
+    </div>
+    <div class="di metallic-hover">
+      <span class="di-placeholder">💫</span>
+      <span class="di-label">Web Design</span>
+      <div class="di-overlay"><span>↗ View on Dribbble</span></div>
+    </div>
+    <div class="di metallic-hover">
+      <span class="di-placeholder">🖼️</span>
+      <span class="di-label">Visual Work</span>
+      <div class="di-overlay"><span>↗ View on Behance</span></div>
+    </div>
+  </div>
+  <div class="design-ctas reveal">
+    <a href="https://behance.net/KhrystellineA" class="btn btn-pink"><span>Behance ↗</span></a>
+    <a href="#" class="btn btn-ghost">Dribbble ↗</a>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     CERTS
+════════════════════════════════════ -->
+<section id="certs" class="paper-bg">
+  <h2 class="certs-hl reveal">CERTS &<br><span class="pk">TRAINING</span></h2>
+  <div class="certs-grid">
+    <div class="cert-card metallic-hover reveal d1">
+      <div class="cert-ico">🏅</div>
+      <div class="cert-issuer">freeCodeCamp</div>
+      <div class="cert-name">Web Development Certification</div>
+      <div class="cert-year">Add year</div>
+    </div>
+    <div class="cert-card metallic-hover reveal d2">
+      <div class="cert-ico">🔵</div>
+      <div class="cert-issuer">Cisco</div>
+      <div class="cert-name">Networking Academy Certificate</div>
+      <div class="cert-year">Add year</div>
+    </div>
+    <div class="cert-card metallic-hover reveal d3">
+      <div class="cert-ico">🤖</div>
+      <div class="cert-issuer">Workshop</div>
+      <div class="cert-name">AI Prompt Engineering</div>
+      <div class="cert-year">2025</div>
+    </div>
+    <div class="cert-tbd reveal d4">
+      <span style="font-size:1.2rem;opacity:.3;">+</span>
+      <span>More certs coming soon</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     CONTACT
+════════════════════════════════════ -->
+<section id="contact">
+  <div class="blob" style="width:600px;height:600px;top:50%;left:50%;transform:translate(-50%,-50%);opacity:.4;"></div>
+  <div class="contact-inner">
+    <h2 class="contact-hl reveal">
+      LET'S<br><span class="pk">WORK</span><br>TOGETHER
+    </h2>
+    <p class="contact-sub reveal d1">
+      Open to remote, hybrid &amp; relocation opportunities.<br>
+      Currently available for freelance &amp; full-time roles.<br>
+      <em style="color:var(--pink);font-style:normal;">AU · CN · BH · CH · UAE · 🇵🇭</em>
+    </p>
+    <div style="display:flex;justify-content:center;margin-bottom:2.5rem;" class="reveal d2">
+      <div class="contact-avail">
+        <span class="avail-dot"></span>
+        Available for opportunities
+      </div>
+    </div>
+    <div class="socials-list reveal d3">
+      <a href="https://github.com/KhrystellineA" class="soc-link">GitHub</a>
+      <a href="https://linkedin.com/in/KhrystellineA" class="soc-link">LinkedIn</a>
+      <a href="https://behance.net/KhrystellineA" class="soc-link">Behance</a>
+      <a href="#" class="soc-link">Dribbble</a>
+      <a href="https://x.com/KhrystellineA_" class="soc-link">Twitter / X</a>
+      <a href="#" class="soc-link">Dev.to</a>
+      <a href="https://facebook.com/Khrystelline" class="soc-link">Facebook</a>
+      <a href="https://instagram.com/Khrystelline" class="soc-link">Instagram</a>
+    </div>
+
+    <!-- Formspree form — replace YOUR_FORM_ID -->
+    <form class="contact-form reveal d2" action="https://formspree.io/f/mvzzvaqr" method="POST" id="contactForm">
+      <div class="form-row-2">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="first_name" placeholder="Jane" required autocomplete="given-name">
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="last_name" placeholder="Doe" required autocomplete="family-name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject" class="form-select">
+          <option value="" disabled selected>What's this about?</option>
+          <option value="Job Opportunity">💼 Job Opportunity</option>
+          <option value="Freelance Project">🎨 Freelance Project</option>
+          <option value="Collaboration">🤝 Collaboration</option>
+          <option value="Just saying hi">👋 Just saying hi</option>
+          <option value="Other">✦ Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, idea, or anything on your mind..." required></textarea>
+      </div>
+      <div class="form-footer-row">
+        <p class="form-note">I typically reply within 24–48 hours ✦</p>
+        <button type="submit" class="form-submit"><span>Send Message ✦</span></button>
+      </div>
+      <p class="form-msg" id="formMsg"></p>
+    </form>
+
+    <!-- Support links centered -->
+    <div class="contact-support reveal">
+      <p class="contact-support-label">☕ Support My Work</p>
+      <div class="contact-support-links">
+        <a href="https://buymeacoffee.com/khrystelline" class="soc-link">Buy Me a Coffee</a>
+        <a href="https://ko-fi.com/khrystelline" class="soc-link">Ko-fi</a>
+        <a href="https://patreon.com/khrystelline" class="soc-link">Patreon</a>
+        <a href="https://paypal.me/khrystelline" class="soc-link">PayPal</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer>
+  <div class="footer-top">
+    <span class="footer-logo">Khrystelline<em>A</em></span>
+    <p class="footer-tagline">Designed &amp; built with attention to every detail ✦</p>
+  </div>
+  <div class="footer-bot">
+    <p>© 2025 Khrystel Aguila · KhrystellineA</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
