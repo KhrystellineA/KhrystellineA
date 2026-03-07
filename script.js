@@ -8,64 +8,70 @@
   const rows = {
     // BLACK CAT — body=#1a1a1a, eyes=green #4dde7a, nose/ear=pink
     black: [
-      '..B...........',
-      '.BBB..........',
-      'BPBBB.........',  // P = pink inner ear
-      'BBBBBBBB......',
-      'BBBBBBB.......',
-      'BEEBBEE.......',  // E = green eyes
-      'BBBBNBBB......',  // N = pink nose
-      'BBBBBBBBBB....',
-      '.BBBBBBBBBB.BB',  // tail at end
-      '.BBBBBBBBBBB..',
-      '.BBBBBBBBB....',
-      '..BBB..BBB....',  // legs A
-      '..BB....BB....',  // legs B
-      '.BBB...BBB....',  // paws
-      '..............', 
+      '...........B.....B...........',
+      '..........BBB...BBB..........',
+      '.........BBBPB.BPBBB.........',  // P = pink inner ear
+      '......BBBBBBBBBBBBBBBBB......',
+      '.......BBBBBBBBBBBBBBB.......',
+      '........BBBESEBBESEBB........',  // E = green eyes
+      '.........BBBBBNBBBBB........',  // N = pink nose
+      '.........BBBBBBBBBBB........B',
+      '........BBBBBBBBBBBBB......BB',  // tail at end
+      '......BBBBBBBBBBBBBBBB....BB.',
+      '.....BBBBBBBBBBBBBBBBBB.BBB..',
+      '.....BBBBBBBBBBBBBBBBBBBBB...',
+      '......BBBBBBBBBBBBBBBBBB.....',
+      '........BBBB...BBBBB.........',  // legs A
+      '..........BB.....BB..........',  // legs B
+      '.........BPB....BPB..........',  // paws
+      '.............................', 
     ],
     // WHITE CAT — body=#ede8d0, eyes=yellow #FFD700
     white: [
-      '..W...........',
-      '.WWW..........',
-      'WPWWW.........',
-      'WWWWWWWW......',
-      'WWWWWWW.......',
-      'WYYWWYY.......',  // Y = yellow eyes
-      'WWWWNWWW......',  // N = pink nose
-      'WWWWWWWWWW....',
-      '.WWWWWWWWWW.WW',
-      '.WWWWWWWWWWW..',
-      '.WWWWWWWWW....',
-      '..WWW..WWW....',
-      '..WW....WW....',
-      '.WWW...WWW....',
-      '..............',
+      '...........W.....W...........',
+      '..........WWW...WWW..........',
+      '.........WWPPW.WPPWW.........',  // P = pink inner ear
+      '......WWWWWWWWWWWWWWWWW......',
+      '.......WWWWWWWWWWWWWWW.......',
+      '.......WWWYSYBBYSYWWW........',  // Y = yellow eyes
+      '........WWWWWWNWWWWWW.........',  // N = pink nose
+      '.........WWWWWWWWWWW........W',
+      '........WWWWWWWWWWWWW.....WW.',  // tail at end
+      '......WWWWWWWWWWWWWWWWW..WW..',
+      '......WWWWWWWWWWWWWWWWWWWW...',
+      '.......WWWWWWWWWWWWWWWWWW....',
+      '........WWWWWWWWWWWWWWW......',
+      '.........WWWW...WWWWW........',  // legs A
+      '..........WW.....WW..........',  // legs B
+      '.........WPW....WPW..........',  // paws
+      '.............................',
     ],
-    // SPOTTED CAT — white base + black spots, eyes=orange #FF8C00
+    // SPOTTED CAT — white base + black spots, eyes=yellow #FFD700
     spotted: [
-      '..W...........',
-      '.WSW..........',  // spot on ear
-      'WPWWW.........',
-      'WWSSSWWW......',  // spots on head
-      'WWWWWWW.......',
-      'WOOSWOO.......',  // O = orange eyes, S = spot between
-      'WWWWNWWW......',
-      'WWSWWWWWWW....',  // spot on shoulder
-      '.WWWWSWWWWW.WW',  // spot on hip
-      '.WWWWWWWWWWW..',
-      '.WWWWWWWWW....',
-      '..WWW..WWW....',
-      '..WW....WW....',
-      '.WWW...WWW....',
-      '..............',
+      '...........W.....W...........',
+      '..........WWW...WWW..........',
+      '.........WWPPW.WPPWS.........',  // P = pink inner ear
+      '......WWSSWWWWWWWSSSSWW......',
+      '.......WWWWWWWWWWWSSWW.......',
+      '.......WWWYSYBBYSYWWW........',  // Y = yellow eyes
+      '........WWWWWWNWWWWWW.........',  // N = pink nose
+      '.........WWWWSSSWWWW........W',
+      '........WWWWWWWWWWWWW......WW',  // tail at end
+      '......WWWSSSSWWWWWWWWWWW..SW.',
+      '......WWWWWWWWWWWWWWWWWSSSW...',
+      '.......WWWWWWWWWWWWWWWWWW....',
+      '........WWWWWWWWWSSSSWW......',
+      '.........WWWW...WWWWW........',  // legs A
+      '..........WW.....WW..........',  // legs B
+      '.........WPW....WPW..........',  // paws
+      '.............................',
     ]
   };
 
   const colors = {
     black:   { B:'#1a1a1a', E:'#4dde7a', P:'#cc4466', N:'#cc4466' },
     white:   { W:'#ede8d0', Y:'#FFD700', P:'#e8a0b0', N:'#e8a0b0' },
-    spotted: { W:'#ede8d0', S:'#1a1a1a', O:'#FF8C00', P:'#e8a0b0', N:'#e8a0b0' }
+    spotted: { W:'#ede8d0', S:'#1a1a1a', Y:'#FFD700', P:'#e8a0b0', N:'#e8a0b0' }
   };
 
   function makeSVG(type) {
